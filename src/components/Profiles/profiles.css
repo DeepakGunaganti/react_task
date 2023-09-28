@@ -1,0 +1,148 @@
+.rootDivContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+label {
+  text-align: left;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+span {
+  justify-self: start;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  justify-self: end;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+}
+
+.rootContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.788);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.formMaintainer {
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.iconContainer {
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imager {
+  width: 10%;
+  height: 10%;
+  cursor: pointer
+}
+
+.imager:hover {
+  transform: rotate(5deg) scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+  div {
+      grid-template-columns: 1fr;
+  }
+
+  label {
+      text-align: left;
+  }
+
+  .rootContainer {
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+  .formContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .rootContainer {
+      grid-template-columns: auto;
+      grid-gap: 20px;
+  }
+
+  .formContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 5px;
+  }
+
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
